@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    grid-template-columns: 25% 25% 25% 25%;
+    overflow: hidden;
+}
+
+.grid > div {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    height: 121px;
+}
+
+
+@media screen and (max-width: 720px){
+    .grid {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .grid {
+        grid-template-columns: 100%;
+    }
+}
